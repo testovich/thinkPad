@@ -4,15 +4,16 @@ var MainHead = React.createClass({
             timeEl = this.refs.time.getDOMNode(),
             now = new Date();
 
-        dateEl.innerText = now.toDateString();
-        timeEl.innerText = '/ ' + now.toTimeString().split(' ')[0];
+
+        dateEl.textContent = now.toDateString();
+        timeEl.textContent = '/ ' + now.toTimeString().split(' ')[0];
 
         var timer = now.getTime();
 
         this.timer = setInterval(function () {
             timer += 1000;
             var time = new Date(timer);
-            timeEl.innerText = '/ ' + time.toTimeString().split(' ')[0];
+            timeEl.textContent = '/ ' + time.toTimeString().split(' ')[0];
         },1000);
     },
 

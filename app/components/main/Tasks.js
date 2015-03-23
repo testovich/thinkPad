@@ -44,10 +44,10 @@ var TaskTableRow = React.createClass({
 
     componentDidMount: function (){
         var publish = this.refs.publish.getDOMNode();
-        publish.innerText = getDate(this.props.note.item.publish);
+        publish.textContent = getDate(this.props.note.item.publish);
 
         this.timer = setInterval(function(){
-            publish.innerText = getDate(this.props.note.item.publish);
+            publish.textContent = getDate(this.props.note.item.publish);
         }.bind(this),60000);
     },
 

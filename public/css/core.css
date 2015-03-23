@@ -390,9 +390,9 @@ dd {
   font-size: 16px;
   border: 1px solid #666;
   background: #ebebeb;
-  -moz-transition: right 0.2s ease;
-  -webkit-transition: right 0.2s ease;
-  transition: right 0.2s ease;
+
+  -webkit-transition: right 0.5s ease;
+  transition: right 0.5s ease;
 }
 .popup__header {
   height: 50px;
@@ -601,10 +601,8 @@ dd {
   overflow: auto;
   display: block;
   float: right;
-  -moz-transition: right 0.2s ease;
-  -webkit-transition: right 0.2s ease;
-  transition: right 0.2s ease;
-  box-shadow: inset 0px -3px 20px rgba(0,0,0,0.2);
+
+  box-shadow: inset 0 -3px 20px rgba(0,0,0,0.2);
 }
 .note__description {
   font-size: 17px;
@@ -636,10 +634,8 @@ dd {
   background: #ebebeb;
   display: block;
   float: left;
-  -moz-transition: left 0.2s ease;
-  -webkit-transition: left 0.2s ease;
-  transition: left 0.2s ease;
-  box-shadow: inset 0px -3px 20px rgba(0,0,0,0.2);
+
+  box-shadow: inset 0 -3px 20px rgba(0,0,0,0.2);
 }
 body {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -662,9 +658,7 @@ a:hover,
   position: relative;
   left: 0;
   background-color: #ebebeb;
-  -moz-transition: left 0.2s ease;
-  -webkit-transition: left 0.2s ease;
-  transition: left 0.2s ease;
+
 }
 .cabinet__h {
   padding-left: 15px;

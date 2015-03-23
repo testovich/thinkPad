@@ -1,0 +1,45 @@
+@require '../var';
+
+.task__add
+  font-size 23px;
+  color $color_blue_ico;
+  cursor pointer;
+  &:hover
+    color $color_white;
+    opacity 0.9;
+
+.note__add
+  width 75px;
+  height 75px;
+  line-height 75px;
+  position absolute;
+  display inline-block;
+  bottom 15px;
+  right 50px;
+
+  background $color_blue_ico;
+
+  color #fff;
+  font-size 28px;
+  text-align center
+
+  border-radius 100px;
+
+  -webkit-transition right .2s ease;
+  transition right .2s ease;
+
+  &:hover
+    opacity 0.9;
+
+  & > i
+    display inline-block;
+    margin-left -3px;
+
+@media (max-width: 40em)
+  .note__add
+    width 35px;
+    height 35px
+    line-height 35px;
+    bottom 10px;
+    right 12px;
+    font-size 10px;

@@ -1,0 +1,9 @@
+{
+  "name": "test-task-manager",
+  "version": "0.0.1",
+  "dependencies": {
+    "components-font-awesome": ">1",
+    "react": "~0.13.1",
+    "simple-event-emitter": "*"
+  }
+}

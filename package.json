@@ -1,0 +1,33 @@
+{
+  "name": "test-task-manager",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Simple task manager",
+  "main": "app.js",
+  "scripts": {
+    "watch": "watchify ./app/app.js -o public/js/bundle.js -v -d",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm run watch & nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "ejs": ">=1",
+    "express": "4.9.7",
+    "firebase": "^2.2.2",
+    "mongoose": ">= 2.6.5",
+    "stylus": "^0.50.0"
+  },
+  "devDependencies": {
+    "browserify": "~6.0.3",
+    "nodemon": "^1.2.1",
+    "reactify": "^0.15",
+    "uglify-js": "~2.4.15",
+    "watchify": "~2.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}

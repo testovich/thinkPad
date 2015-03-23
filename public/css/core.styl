@@ -1,0 +1,64 @@
+// Modules
+@require 'modules/normalize';
+@require 'var';
+@require 'utils';
+@require 'modules/menu';
+@require 'modules/buttons';
+@require 'modules/menu';
+@require 'modules/tasks';
+@require 'modules/form';
+@require 'modules/preloader';
+@require 'modules/state';
+@require 'modules/sidebar-info';
+@require 'modules/sidebar-nav';
+
+body
+  font-family 'Open Sans Condensed', sans-serif;
+  font-size  14px;
+  color #777;
+
+  background #f2f2f2;
+
+a:hover, .transition
+  transition color .3s linear;
+
+.cabinet__header
+  width 100%;
+  height 41px;
+  background $color_dark_blue;
+
+.cabinet
+  &__main
+    width 100%;
+    height 100%;
+    position relative;
+    left 0;
+
+    background-color $color_grey_bglight;
+
+    -moz-transition left .2s ease;
+    -webkit-transition left .2s ease;
+    transition left .2s ease;
+
+  &__h
+    padding-left 15px;
+    float left;
+
+    color #fff;
+    font-size 30px;
+    font-style italic;
+
+  &__today
+    margin-right 15px;
+    float right;
+
+    color #fff;
+    font-weight bold;
+    font-size 19px;
+    line-height 41px;
+    & dt
+      color $color_blue_ico;
+    & dt, & dd
+      float left;
+      padding 0 4px 0 2px
+

@@ -1,0 +1,91 @@
+.tasks
+  &__header
+    width inherit;
+    padding 15px 18px
+    height 170px;
+
+    background $color_light_blue;
+
+  &__list
+    width 100%;
+    border-collapse collapse;
+    background-color $color_grey_bglight
+
+    & th
+      padding 3px 15px;
+      text-align left;
+      font-size 20px;
+      color #fff;
+      background $color_light_blue;
+
+.task
+  width inherit
+  height 50px;
+
+  font-size 16px;
+  color #666;
+  & > td
+    padding 3px 15px;
+  &:hover
+    background-color $color_blue_hover;
+    cursor pointer;
+
+  &__item
+    color #000;
+
+  &__date
+    width 200px;
+
+  &__btns
+    text-align right;
+    & > a
+      font-size 20px;
+      color $color_blue_ico;
+
+
+
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)
+
+  .tasks, .tasks thead, .tasks tbody, .tasks th, .tasks td, .tasks tr
+    display: block;
+
+  .tasks thead tr
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+  .task
+    & > tr
+      border: 1px solid $color_grey_title;
+
+    &__date
+      width auto;
+
+  .task
+    height auto;
+
+    font-size 14px;
+    & > td
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      & > div
+        min-width 100px;
+        max-width 300px
+        white-space nowrap;
+        overflow hidden;
+        text-overflow ellipsis;
+
+
+  td:before
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+
+  td:before
+    content: attr(data-label);
+    color $color_blue_ico;

@@ -1,0 +1,38 @@
+.is-hide
+  display none;
+/* states */
+.is--open
+  overflow-x hidden;
+  & .sidebar__nav
+    left 0;
+
+  & .cabinet__main
+    left 250px;
+
+
+.is--open-right
+  right 0;
+  & .cabinet__main
+    left -450px;
+
+  & .sidebar__info
+    right 0;
+
+  & .note__add, & .popup__form
+    right 470px;
+
+
+@media (max-width: 40em)
+  .is--open-right
+    right 0;
+    & .cabinet__main
+      left -95%;
+    & .sidebar__info
+      right 0;
+
+  .is-sx-hidden
+    display none
+
+@media (max-width: 768px)
+  .is-mx-hidden
+    display none;

@@ -1,0 +1,39 @@
+/* right sidebar */
+.sidebar__info
+  width 100%;
+  max-width 450px;
+  height 100%;
+  padding 35px 18px 0 20px;
+  position fixed;
+  top 0;
+  right -450px;
+  bottom 0;
+  background $color_grey_bglight;
+  overflow auto;
+
+  display block;
+  float right;
+
+  -moz-transition right .2s ease;
+  -webkit-transition right .2s ease;
+  transition right .2s ease;
+
+  box-shadow inset 0px -3px 20px rgba(0,0,0,0.2);
+
+.note
+  &__description
+    font-size 17px;
+    color #333;
+    clear left;
+
+  &__header
+    width 100%;
+    height 100%;
+    & > h3
+      float left;
+
+  &__close
+    font-size 20px;
+    float right;
+    margin 0 10px;
+    cursor pointer;

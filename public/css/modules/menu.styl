@@ -1,0 +1,31 @@
+@require '../var';
+
+.menu
+  &__list
+    list-style none;
+    margin 0;
+    padding 0;
+    &--separete
+      margin-top 20px;
+      border-top 1px solid $color_blue_ico;
+
+  &__item
+    margin-bottom 7px;
+    padding 4px;
+
+  &__link
+    font-size 18px;
+    color $color_blue_ico;
+    &:hover
+      color #000;
+    & > i
+      margin-right 10px;
+
+
+
+@media (max-width: 40em)
+  .menu
+    &__link
+      font-size 16px;
+    & > i
+      margin-right 6px;

@@ -75,7 +75,7 @@ app.post('/remove', function(req, res) {
         res.send({success:true});
     });
 });
-
+//Start server
 app.listen(config.server.port, function(){
     console.log(config.server.notice);
 });
